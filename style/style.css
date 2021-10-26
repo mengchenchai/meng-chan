@@ -13,4 +13,32 @@ header {
   background-color: cadetblue;
   color: #9c490d;
 }
+
+@media screen and (max-width: 576px) {
+  #main {
+    width: 50px;
+    background-color: blue;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  #main {
+    width: 70px;
+    background-color: chocolate;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #main {
+    width: 100px;
+    background-color: cornflowerblue;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #main {
+    width: 100px;
+    background-color: crimson;
+  }
+}
 /*# sourceMappingURL=style.css.map */

@@ -11,7 +11,34 @@
         width: 100%;background-color: cadetblue;color: rgb(156, 73, 13);
     }
     // 加入判斷裝置的斷點
-    // 超小裝置<576px
-    @media screen and {min-width: 576px;
+    // 超小裝置<576px max-width(最大寬度)
+    @media screen and (max-width: 576px) { 
+        #main {
+            width: 50px;
+            background-color: blue;
+        }
+    }
+    // 小裝置>=576px min-width (最小寬度 含等於)
+    @media screen and (min-width: 576px){
+        #main {
+            width: 70px;
+            background-color: chocolate;
+        }
+        
+    }
+    // 平板裝置>=768px
+    @media screen and (min-width :768px){
+        #main {
+            width: 100px;
+            background-color: cornflowerblue;
+        }
+        
+    }
+    // 大平板裝置 >=992px
+    @media screen and (min-width:992px) {
+        #main {
+            width: 100px;
+            background-color: crimson;
+        }
         
     }
