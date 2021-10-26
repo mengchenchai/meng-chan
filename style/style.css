@@ -3,7 +3,7 @@
 /* 對應html5相同標籤或者呼叫id(標籤自訂名稱-英文、數字和底線；唯一)；class(重複，共用樣式) */
 header {
   width: 100%;
-  height: 50px;
+  height: 100%;
   background-color: aqua;
 }
 
