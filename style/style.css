@@ -41,4 +41,18 @@ header {
     background-color: crimson;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  #main {
+    width: 100px;
+    background-color: darkgreen;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  #main {
+    width: 100px;
+    background-color: darkmagenta;
+  }
+}
 /*# sourceMappingURL=style.css.map */
