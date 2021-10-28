@@ -18,15 +18,15 @@ header {
   header nav #Portfolio, header nav #About, header nav #Project, header nav #Contact {
     display: none;
   }
-  footer nav #Graphic, footer nav #web, footer nav #Audio {
+  footer nav #Graphic, footer nav #Web, footer nav #Audio {
     width: 50%;
     color: aliceblue;
   }
   footer nav #Graphic {
     background-color: blue;
   }
-  footer nav #web {
-    background-color: blueviolet;
+  footer nav #Web {
+    background-color: #580d9e;
   }
   footer nav #Audio {
     background-color: cadetblue;
