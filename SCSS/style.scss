@@ -13,7 +13,7 @@
     // 加入判斷裝置的斷點
     // 超小裝置<576px max-width(最大寬度)
     @media screen and (max-width: 576px) { 
-        @import '_Esmall.scss';
+        @import '_02Esmall.scss';
     }
     // 小裝置>=576px min-width (最小寬度 含等於)
     @media screen and (min-width: 576px){

@@ -15,9 +15,21 @@ header {
 }
 
 @media screen and (max-width: 576px) {
-  #main {
-    width: 50px;
+  header nav #Portfolio, header nav #About, header nav #Project, header nav #Contact {
+    display: none;
+  }
+  footer nav #Graphic, footer nav #web, footer nav #Audio {
+    width: 50%;
+    color: aliceblue;
+  }
+  footer nav #Graphic {
     background-color: blue;
+  }
+  footer nav #web {
+    background-color: blueviolet;
+  }
+  footer nav #Audio {
+    background-color: cadetblue;
   }
 }
 
