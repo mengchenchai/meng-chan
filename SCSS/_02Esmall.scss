@@ -30,12 +30,12 @@ header{
         // 商標
         #Logo{
             //寬度 8等份
-            width: $W8;
+            width: $W8 +5%;
         }
         // 選單
         #Menu {
             //寬度 2等份
-            width: 100% /10 *2;
+            width: $W1 + 5%;
         }
         .Clear {
             clear: both;
