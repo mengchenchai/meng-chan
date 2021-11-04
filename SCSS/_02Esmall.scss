@@ -18,14 +18,14 @@ header{
     nav {
         // 屬於 nav 寬度 % ; 高度 px ; 背景色(暫)
         width: $NW;
-        // height: $NH;
+        //height: $NH;
         background-color: rosybrown;
 
         //指向清單物件 li
         li {
             // 將 Logo 與 選單 設定為 垂直排列(一列) float
             // float(浮點對齊)  缺點，會自動往上一階層(新圖層)，所以副框架(外框架)，若沒有設定高度，系統將會無視存在
-            //解決方式一:副框架(外框架)設定高度 :解決方法二:清除 clear
+            //解決方式一:副框架(外框架)設定高度 :解決方法二:清除 clear 浮動狀態
             float: left;
         }
         // 商標
@@ -66,7 +66,7 @@ header{
 
         // 導覽列:只顯示Loge 和 Menu,其餘不顯示
         // css3集合寫法，將共同的樣式一同編輯
-        #Portfolio, #About, #Project, #Contact {
+        #Protfolio, #About, #Project, #Contact {
             @extend %Dn;
         }
     }
