@@ -38,6 +38,8 @@ img {
     width: 15%;
     text-align: center;
     line-height: 80px;
+    background-image: url(../../image/icon/0001.svg);
+    background-color: royalblue;
   }
   header nav .Clear {
     clear: both;
