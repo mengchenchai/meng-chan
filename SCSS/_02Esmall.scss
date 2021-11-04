@@ -45,11 +45,20 @@ header{
         #Menu {
             //寬度 1.5 等份
             width: $W1 + 5%;
+            height: 80px;
             // 文字水平 (行距) 、垂直 (文字對齊 -- 置中) 置中
             text-align: center;
             line-height: 80px;
+            // 將文字移置裝置之外
+            text-indent: -9999px;
+            //背景圖片連結
             background-image: url(../../image/icon/0001.svg);
-            background-color: royalblue;
+            // 背景圖片對齊(定位點)
+            background-position: center;
+            // 背景圖片舉消重複顯示
+            background-repeat: no-repeat;
+            // 背景圖片尺寸 auto自動 cover符合框架尺寸
+            background-size: cover;
         }
         .Clear {
             clear: both;
