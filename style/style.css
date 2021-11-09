@@ -43,7 +43,7 @@ img {
     background-image: url(../../image/icon/0001.svg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
   }
   header nav .Clear {
     clear: both;
