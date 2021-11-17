@@ -18,18 +18,33 @@ header{
             //解決方式一:副框架(外框架)設定高度 :解決方法二:清除 clear 浮動狀態
             float: left;
         }
+        // 呼叫 導覽列內按鈕的寬度設定
+        @include Largena;
+        
         // 商標
         #Logo{
-            // 寬度 8.5 等份
-            width: $W1 * 8 + 5%;
-            //文字尺寸，內縮，水平置中
-            font-size: $Tpx * 2;
-            //內縮 : 方法1，首行縮排(單行文字)
-            text-indent: 30px;
-            //文字水平置中，行距設定 ( 父框架的高度 = 行距的數值 )  line-height: 80 * 0.15 + px; 
-            //方法一 父框架有高度時，父框架的高度 = 行距的數值 ; 方法二 文字尺寸的倍數 + 3
-            line-height: $NH;
-            background-color: blanchedalmond ;
+            // 寬度 
+            width: $W1 * 3;
+            //水平置中
+            text-align: center;
+            // 文字尺寸 rem
+            font-size: $Trem * 2;
+            
+            // 清除小裝置設定 首行縮排
+            text-indent: 0;
+
+            background-color: honeydew;
+        }
+
+        // 按鈕共用值 li
+        li{
+            width: ($W10 - 30%) / 4;
+            // 文字對齊 水平 垂直 置中
+            text-align: center;
+            // 文字尺寸
+            font-size: $Trem * 1.3;
+            // 行距
+            line-height: $Trem * ( 2 + 2.3);
         }
         // 選單
         #Menu {
