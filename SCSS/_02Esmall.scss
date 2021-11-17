@@ -3,11 +3,7 @@
 // scss 繼承
 // scss 變數 要計算的值或者常變動的值 $
 
-// 繼承區
-%Dn{
-    // 不顯示
-    display: none;
-}
+
 %Subnav {
     // 寬度 與 文字顏色 頁尾次選單
     width: 50%;
@@ -45,22 +41,14 @@ header{
         #Menu {
             //寬度 1.5 等份
             width: $W1 + 5%;
-            height: 65px;
+            // height: 100%;
             // 文字水平 (行距) 、垂直 (文字對齊 -- 置中) 置中
             text-align: center;
             line-height: $NH;
-            // 將文字移置裝置之外
-            text-indent: -9999px;
+            // 自行輸入所需的值
+            @include BgText(contain);
             //背景圖片連結
             background-image: url(../../image/icon/0001.svg);
-            // 背景圖片對齊(定位點)
-            background-position: center;
-            // 背景圖片舉消重複顯示
-            background-repeat: no-repeat;
-            // 背景圖片尺寸 auto自動 cover(背景圖片小於容器時，放大圖片至容器的大小並填滿；背景圖片大於容器時，
-            // 縮小圖片至容器的大小並填滿；缺點，容器的長寬比例與背景圖片的長寬比例不合時，會出現背景圖片失真) 
-            // contain (背景圖片大於容器時，縮小至在容器內呈現，會留邊界)
-            background-size: contain;
         }
         .Clear {
             clear: both;
@@ -69,54 +57,48 @@ header{
         // 導覽列:只顯示Loge 和 Menu,其餘不顯示
         // css3集合寫法，將共同的樣式一同編輯
         #Protfolio, #About, #Project, #Contact {
-            @extend %Dn;
+            // @extend %Dn;
+            // 呼叫@mixin
+            @include DN;
         }
     }
 
-    // 輪播圖片，超小裝置 100% X 280px
+    // 輪播圖片，超小裝置 100% X 280px (圖片以大尺寸 1920 * 600 為基礎計算)
+    // vw (以裝置的寬為寬度) vh (以裝置的高為高度)
     #BannerBox{
-        width: $W10 * 5;
+        width: $W10;
         height: $BHsmall;
+        // 超出範圍設定，能滑動X軸，讓圖片在框架中左右移動
+        overflow-x: auto;
         background-color: cadetblue;
         ul {
-            width: $W10 *5;
-            height: $BHsmall;
+            // 圖片框的寬度尺寸
+            width: $W10 * 5;
             li{
-                width: $W10;
+                width: 375px;
                 height: $BHsmall;
                 float: left;
             }
-            .Box1 {
-                background-color: darkgreen;
-            }
-            .Box2 {
-                background-color: darkkhaki;
-            }
-            .Box3 {
-                background-color: darkolivegreen;
-            }
-            .Box4 {
-                background-color: darkgoldenrod;
-            }
-            .Box5 {
-                background-color: darkcyan;
-            }
+            // .Box1 {
+            //     background-color: darkgreen;
+            // }
+            // .Box2 {
+            //     background-color: darkkhaki;
+            // }
+            // .Box3 {
+            //     background-color: darkolivegreen;
+            // }
+            // .Box4 {
+            //     background-color: darkgoldenrod;
+            // }
+            // .Box5 {
+            //     background-color: darkcyan;
+            // }
         }
     }
 }
 footer{
     nav {
-        #Graphic {
-            @extend %Subnav;
-            background-color: blue;
-        }
-        #Web {
-            @extend %Subnav;
-            background-color: rgb(88, 13, 158);
-        }
-        #Audio {
-            @extend %Subnav;
-            background-color: cadetblue;
-        }
+
     }
 }
