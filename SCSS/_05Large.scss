@@ -19,12 +19,10 @@ header{
             float: left;
         }
         // 呼叫 導覽列內按鈕的寬度設定
-        @include Largena;
-        
+        @include LargeNav;
+
         // 商標
         #Logo{
-            // 寬度 
-            width: $W1 * 3;
             //水平置中
             text-align: center;
             // 文字尺寸 rem
@@ -38,7 +36,6 @@ header{
 
         // 按鈕共用值 li
         li{
-            width: ($W10 - 30%) / 4;
             // 文字對齊 水平 垂直 置中
             text-align: center;
             // 文字尺寸
@@ -92,6 +89,8 @@ header{
 }
 footer{
     nav {
-
+        // 寬度 
+        width: $W1 * 3;
+        width: ($W10 - 30%) / 4;
     }
 }
