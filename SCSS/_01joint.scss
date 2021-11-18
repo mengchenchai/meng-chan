@@ -85,7 +85,7 @@ $W9:$W10 /10 *9; //寬度 9等份
 }
 
 // 設定 05 06 07 檔案共用寬度，導覽列的按鈕，所以會在nav 內呼叫
-@mixin Largenav($multiple,$BtnNum) {
+@mixin LargeNav($multiple,$BtnNum) {
     // 計算方式
     // 設定 寬度的基準值 5%
     $W05: 5%;
