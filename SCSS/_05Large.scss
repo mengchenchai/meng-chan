@@ -19,7 +19,7 @@ header{
             float: left;
         }
         // 呼叫 導覽列內按鈕的寬度設定
-        @include LargeNav;
+        @include LargeNav(6, 4);
 
         // 商標
         #Logo{
