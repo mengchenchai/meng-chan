@@ -1,15 +1,3 @@
-// scss 巢狀語法；呼叫元素選擇器(標籤選擇器)
-// 轉譯後為 後代選擇器 header nav #Portfolio {...}
-// scss 繼承
-// scss 變數 要計算的值或者常變動的值 $
-
-
-%Subnav {
-    // 寬度 與 文字顏色 頁尾次選單
-    width: 50%;
-    color: aliceblue
-}
-
 header{
     nav {
         // 屬於 nav 寬度 % ; 高度 px ; 背景色(暫)
@@ -26,21 +14,15 @@ header{
         }
         // 商標
         #Logo{
-            // 寬度 9 等份
-            width: $W1 * 9;
-            //文字尺寸，內縮，水平置中
-            font-size: $Tpx * 2;
-            // 文字垂直置中
+            //文字垂直置中
             text-align: center;
-            //文字水平置中，行距設定 ( 父框架的高度 = 行距的數值 )  line-height: 80 * 0.15 + px; 
-            //方法一 父框架有高度時，父框架的高度 = 行距的數值 ; 方法二 文字尺寸的倍數 + 3
-            line-height: $NH;
-            background-color: blanchedalmond ;
+            // 不內縮
+            text-indent: 0;
         }
         // 選單
         #Menu {
-            //寬度 1 等份
-            width: $W1;
+            //寬度 2 等份
+            width: $W1 * 2;
             // height: 100%;
             // 文字水平 (行距) 、垂直 (文字對齊 -- 置中) 置中
             text-align: center;
@@ -61,6 +43,17 @@ header{
             // 呼叫@mixin
             @include DN;
         }
+
+        #MobileNav{
+            width: $W1 * 10;
+            // 高度單位 vh (裝置的可視高度)
+            height: 100vh;
+            // 定位點 絕對定位 設定階層
+            position: absolute;
+            z-index: 10;
+            display: none;
+            background-color: tomato;
+        }
     }
 
     // 輪播圖片，超小裝置 100% X 280px (圖片以大尺寸 1920 * 600 為基礎計算)
@@ -70,7 +63,7 @@ header{
         height: $BHsmall;
         // 超出範圍設定，能滑動X軸，讓圖片在框架中左右移動
         overflow-x: auto;
-        background-color: cadetblue;
+        background-color: rgb(60, 214, 219);
         ul {
             // 圖片框的寬度尺寸
             width: $W10 *5;
@@ -79,6 +72,21 @@ header{
                 height: $BHsmall;
                 float: left;
             }
+            // .Box1 {
+            //     background-color: darkgreen;
+            // }
+            // .Box2 {
+            //     background-color: darkkhaki;
+            // }
+            // .Box3 {
+            //     background-color: darkolivegreen;
+            // }
+            // .Box4 {
+            //     background-color: darkgoldenrod;
+            // }
+            // .Box5 {
+            //     background-color: darkcyan;
+            // }
         }
     }
 }

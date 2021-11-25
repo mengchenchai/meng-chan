@@ -14,20 +14,20 @@ header{
         }
         // 商標
         #Logo{
-            // 寬度 9 等份
-            width: $W1 * 9;
+            // 寬度 8 等份
+            width: $W1 * 8;
             //文字尺寸，內縮，水平置中
-            font-size: $Tpx * 2;
+            font-size: $Tpx *2;
             //內縮 : 方法1，首行縮排(單行文字)
-            text-indent: 100%;
+            // text-indent: 100%;
             //文字水平置中，行距設定 ( 父框架的高度 = 行距的數值 )  line-height: 80 * 0.15 + px; 
             line-height: $NH;
             background-color: blanchedalmond ;
         }
         // 選單
         #Menu {
-            //寬度 1 等份
-            width: $W1;
+            //寬度 2 等份
+            width: $W1 * 2;
             // height: 100%;
             // 文字水平 (行距) 、垂直 (文字對齊 -- 置中) 置中
             text-align: center;
@@ -47,6 +47,16 @@ header{
             // @extend %Dn;
             // 呼叫@mixin
             @include DN;
+        }
+        #MobileNav{
+            width: $W1 * 10;
+            // 高度單位 vh (裝置的可視高度)
+            height: 100vh;
+            // 定位點 絕對定位 設定階層
+            position: absolute;
+            z-index: 10;
+            display: none;
+            background-color: tomato;
         }
     }
 
