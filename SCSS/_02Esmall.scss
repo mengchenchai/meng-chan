@@ -12,26 +12,22 @@
 
 header{
     nav {
+        // 設定 nav 專用(區域) 變數
+        $NH: 70px;
         // 屬於 nav 寬度 % ; 高度 px ; 背景色(暫)
         width: $NW;
         height: $NH;
         background-color: rosybrown;
 
-        //指向清單物件 li
-        li {
-            // 將 Logo 與 選單 設定為 垂直排列(一列) float
-            // float(浮點對齊)  缺點，會自動往上一階層(新圖層)，所以副框架(外框架)，若沒有設定高度，系統將會無視存在
-            //解決方式一:副框架(外框架)設定高度 :解決方法二:清除 clear 浮動狀態
-            float: left;
-        }
+       
         // 商標
         #Logo{
             // 寬度 8.5 等份
-            width: $W1 * 8 + 5%;
+            width: $W1 * 8.5;
             //文字尺寸，內縮，水平置中
-            font-size: $Tpx * 2;
+            font-size: $Tpx;
             //內縮 : 方法1，首行縮排(單行文字)
-            text-indent: 30px;
+            // text-indent: 30px;
             //文字水平置中，行距設定 ( 父框架的高度 = 行距的數值 )  line-height: 80 * 0.15 + px; 
             //方法一 父框架有高度時，父框架的高度 = 行距的數值 ; 方法二 文字尺寸的倍數 + 3
             line-height: $NH;
@@ -50,8 +46,13 @@ header{
             //背景圖片連結
             background-image: url(../../image/icon/0001.svg);
         }
-        .Clear {
-            clear: both;
+        
+        // 手機版的導覽列
+        #MobileNav{
+            width: $W1 * 10;
+            // 高度單位 vh (裝置的可視高度)
+            height: 100vh;
+            background-color: aqua;
         }
 
         // 導覽列:只顯示Loge 和 Menu,其餘不顯示
