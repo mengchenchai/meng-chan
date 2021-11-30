@@ -67,7 +67,6 @@ header{
     // vw (以裝置的寬為寬度) vh (以裝置的高為高度)
     #BannerBox{
         width: $W10;
-        height: $BHsmall;
         // 超出範圍設定，能滑動X軸，讓圖片在框架中左右移動
         overflow-x: auto;
         background-color: cadetblue;
@@ -76,7 +75,6 @@ header{
             width: $W10 * 5;
             li{
                 width: 100vw;
-                height: $BHsmall;
                 float: left;
             }
         }

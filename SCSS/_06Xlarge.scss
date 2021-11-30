@@ -70,22 +70,6 @@ header{
 
     // 輪播圖片，超小裝置 100% X 280px (圖片以大尺寸 1920 * 600 為基礎計算)
     // vw (以裝置的寬為寬度) vh (以裝置的高為高度)
-    #BannerBox{
-        width: $W10;
-        height: $BHsmall;
-        // 超出範圍設定，能滑動X軸，讓圖片在框架中左右移動
-        overflow-x: auto;
-        background-color: cadetblue;
-        ul {
-            // 圖片框的寬度尺寸
-            width: $W10 * 5;
-            li{
-                width: 100vw;
-                height: $BHsmall;
-                float: left;
-            }
-        }
-    }
 }
 footer{
     nav {

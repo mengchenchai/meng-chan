@@ -25,6 +25,20 @@ img {
   height: auto;
 }
 
+.clear {
+  clear: both；;
+}
+
+a {
+  text-decoration: none;
+  color: brown;
+}
+
+a:hover {
+  color: cadetblue;
+  font-weight: 650;
+}
+
 @media screen and (max-width: 576px) {
   header nav {
     width: 100%;
@@ -228,6 +242,7 @@ img {
   }
   header #BannerBox {
     width: 100%;
+    padding-bottom: 40vh;
     height: 280px;
     overflow-x: auto;
     background-color: cadetblue;
@@ -237,7 +252,6 @@ img {
   }
   header #BannerBox ul li {
     width: 100vw;
-    height: 280px;
     float: left;
   }
   #main article {
@@ -295,20 +309,6 @@ img {
   header nav #Protfolio, header nav #About, header nav #Project, header nav #Contact {
     display: block;
   }
-  header #BannerBox {
-    width: 100%;
-    height: 280px;
-    overflow-x: auto;
-    background-color: cadetblue;
-  }
-  header #BannerBox ul {
-    width: 500%;
-  }
-  header #BannerBox ul li {
-    width: 100vw;
-    height: 280px;
-    float: left;
-  }
   footer nav {
     width: 30%;
     width: 17.5%;
@@ -357,23 +357,8 @@ img {
   header nav #Protfolio, header nav #About, header nav #Project, header nav #Contact {
     display: block;
   }
-  header #BannerBox {
-    width: 100%;
-    height: 280px;
-    overflow-x: auto;
-    background-color: cadetblue;
-  }
-  header #BannerBox ul {
-    width: 500%;
-  }
-  header #BannerBox ul li {
-    width: 100vw;
-    height: 280px;
-    float: left;
-  }
   footer nav {
     width: 30%;
     width: 17.5%;
   }
 }
-/*# sourceMappingURL=style.css.map */
