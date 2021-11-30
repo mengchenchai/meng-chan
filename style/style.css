@@ -88,9 +88,9 @@ a:hover {
     height: 280px;
     float: left;
   }
-  footer nav {
-    width: 30%;
-    width: 17.5%;
+  footer .HRLine {
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 }
 

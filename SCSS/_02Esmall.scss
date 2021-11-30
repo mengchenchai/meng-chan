@@ -110,9 +110,13 @@ header{
     }
 }
 footer{
+    .HRLine{
+        // 上邊界與下邊界，讓 main 與 footer 有點區隔
+        margin: {
+            top: 15px;
+            bottom: 15px;
+        };
+    }
     nav {
-        // 寬度 
-        width: $W1 * 3;
-        width: ($W10 - 30%) / 4;
     }
 }
