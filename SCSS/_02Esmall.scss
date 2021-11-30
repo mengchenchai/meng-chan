@@ -111,6 +111,8 @@ header{
 }
 footer{
     nav {
-
+        // 寬度 
+        width: $W1 * 3;
+        width: ($W10 - 30%) / 4;
     }
 }

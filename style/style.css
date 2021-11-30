@@ -88,6 +88,10 @@ a:hover {
     height: 280px;
     float: left;
   }
+  footer nav {
+    width: 30%;
+    width: 17.5%;
+  }
 }
 
 @media screen and (min-width: 576px) {
@@ -242,8 +246,6 @@ a:hover {
   }
   header #BannerBox {
     width: 100%;
-    padding-bottom: 40vh;
-    height: 280px;
     overflow-x: auto;
     background-color: cadetblue;
   }
